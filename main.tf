@@ -38,7 +38,7 @@ resource "aws_security_group" "elasticache" {
 
 
 
-resource "aws_elasticache_replication_group" "baz" {
+resource "aws_elasticache_replication_group" "elasticache" {
   replication_group_id       = "${var.env}-elasticache"
   description                = "${var.env}-elasticache"
   node_type                  = var.node_type
